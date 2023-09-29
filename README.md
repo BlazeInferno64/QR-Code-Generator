@@ -3,10 +3,10 @@ QR Code generator is a simple QR Code generator made using JavaScript. Making it
 
 # View the live demo here -
 
-<a href="">
+<a href="https://blazeinferno64.github.io/QR-Code-Generator">
 
 ```
-httpa://blazeinferno64.github.io/QR-Code-Generator
+https://blazeinferno64.github.io/QR-Code-Generator
 ```
 
 </a>
