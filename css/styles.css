@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+button,input,select{
+    outline: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(90deg,rgb(6, 211, 98),74%,rgb(0, 110, 255));
+    font-family: 'Poppins',sans-serif;
+}
+.app-card{
+    user-select: none;
+    background: rgba(30,30,30);
+    color: #fff;
+    padding: .5rem 1rem;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.6);
+    transition: all .5s ease-in-out;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+}
+.app-header{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.app-header p{
+    color: aqua;
+}
+.app-info p{
+    color: rgb(2, 255, 116);
+}
+.app-info{
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+    word-spacing: 3px;
+    text-align: center;
+    background: #2a2d2e;
+    width: 100%;
+    border-radius: inherit;
+}
+.app-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.seperate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+.text{
+    width: 100%;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    background: #2a2d2e;
+    color: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+.input label{
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    width: 100%;
+    padding: .3rem .5rem;
+    font-size: 1.2rem;
+    color: rgb(6, 211, 98);
+    background: hsl(195, 5%, 15%);
+}
+.custom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.custom label{
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    width: 100%;
+    padding: .3rem .5rem;
+    font-size: 1.2rem;
+    color: rgb(6, 211, 98);
+    background: hsl(195, 5%, 15%);
+}
+.custom select{
+    width: 100%;
+    border: none;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    font-size: 1.23rem;
+    background: #2a2d2e;
+    color: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.done{
+    width: 100%;
+}
+.gen{
+    width: 100%;
+    border: none;
+    background: hsl(155, 91%, 32%);
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.gen:hover{
+    background: hsl(155, 91%, 26%);
+}
+.hide{
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+.output{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.res-card{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(30,30,30);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.65);
+}
+.res-head{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background: #2a2d2e;
+    border-radius: .3rem;
+}
+.img{
+    height: auto;
+    width: auto;
+}
+.opt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 1rem;
+}
+.close,.dwn{
+    padding: .5rem 1rem;
+    border: none;
+    width: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+}
+.close{
+    background: rgb(255, 0, 64);
+    color: #fff;
+}
+.close:hover{
+    background: hsl(345, 100%, 40%);
+}
+.dwn{
+    background: hsl(155, 86%, 28%);
+    color: #fff;
+}
+.dwn:hover{
+    background: hsl(155, 86%, 23%);
+}
+.bottom{
+    transform: translateY(-100%);
+}
+.no{
+    opacity: .55;
+    pointer-events: none;
+}
+@media (max-width: 350px) {
+    .app-card{
+        width: 90%;
+    }
+}
