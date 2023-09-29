@@ -186,6 +186,7 @@ body{
 .img{
     height: auto;
     width: auto;
+    border-radius: .3rem;
 }
 .opt{
     width: 100%;
